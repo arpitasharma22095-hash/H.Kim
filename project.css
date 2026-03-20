@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+  background: #4d4d2d;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  font-size: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* MENU LIST */
+.menu {
+  list-style: none;
+  display: flex;
+   /* flex-wrap: wrap; */
+  gap: 20px;
+  
+}
+.list{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+  display: none;
+}
+
+/* HAMBURGER ICON */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ------------ MOBILE RESPONSIVE ------------- */
+@media (max-width: 768px) {
+
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    background:  #4d4d2d;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    transition: 0.4s ease;
+  }
+
+  /* SHOW MENU WHEN TOGGLE CHECKED */
+  #menu-toggle:checked ~ .menu {
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+.class{
+    display: flex;
+     flex-wrap: wrap;
+
+}
+/* FIRST PAGE HEADING CLASS */
+.second{
+    display: flex;
+     flex-wrap: wrap;
+    justify-content : center;
+}
+/* FIRST PAGE FIRST PICTURE CLASS */
+.stat1{
+    width: 50%;
+}
+/* FIRST PAGE SECOND PIC CLASS */
+.stat2{
+ width: 50%;
+}
+/* FIRST PAGE BOTH PICTURES IN THIS IMAGE CLASS */
+.image{
+    display: flex;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    color: #4d4d2d;
+    align-items: center;
+    font-size: 100px;
+    font-style: cursive;
+}
+/* SECOND PAGE IMAGE CLASS */
+.stat3{
+    width: 50%;
+    height: 1100px;
+}
+.third{
+    display: flex;
+     
+}
+.stat6{
+    margin-top: 60px;
+    width: 50%;
+    height:500px;
+
+}
+.cont4{
+    display: flex;
+     flex-wrap: wrap;
+}
+.cont5{
+    display: flex;
+     
+}
+.green{
+    width: 50%;
+    height: 500px;
+}
+.gin{
+    width: 50%;
+}
+.cont6{
+    display: flex;
+     
+}
+.footer{
+    display: flex;
+     flex-wrap: wrap;
+    gap:250px;
+    margin-top: 50px;
+}
+.icon{
+    
+    text-align: center;
+    size: large;
+    font-size: 25px;
+    color: #4d4d2d;
+}
+.web{
+    /* width: 1500px; */
+    height: 800px;
+    
+}
+.con{
+    display: flex;
+    align-items: center;
+     /* flex-wrap: wrap; */
+}
+.font{
+    background-color:#4d4d2d;
+    color: white;
+}
+.home{
+    color: white;
+     padding-left: 500px; 
+
+}
+.para{
+    
+    text-align: center;
+    padding-top: 100px;
+    color: #4d4d2d;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.serv{
+    text-align: center;
+    
+    color: #4d4d2d;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+.deep{
+    /* margin-top: 160px; */
+    text-align: center;
+    padding-top: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 50px;
+}
+.mask{
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.hydra{
+    text-align: center;
+    padding-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a{
+    color:#4d4d2d ;
+}
+.data{
+    display: flex;
+     flex-wrap: wrap;
+    
+
+}
+.bx1{
+    background-color: #4d4d2d;
+    width: 500px;
+    height: 550px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+/* FOOTER */
+.get{
+    width: 250px;
+    height: 550px;
+}
+
+.form-container {
+    width: 450px;
+    padding-left: 100px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    margin-left: 100px;
+}
+
+form label {
+    font-size: 16px;
+    color: #4d4d2d;
+    display: block;
+    margin-bottom: 6px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid #4d4d2d;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.checkbox-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.checkbox-row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #4d4d2d;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background: #4d4d2d;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.swa button{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    margin-left: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 0px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.book{
+    padding-left: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+}
+/* BUTTON CLASS HUT */
+.hut button{
+    width: 200px;
+    margin-top: 30px;
+}
+.hut2 button{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.hut3 button{
+    width: 200px;
+    margin-top: 30px;
+}
+.hut4 button{
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 10%;
+}
+.hut5 button{
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 10%;
+    /* BUTTON CLASS HUT  FINISH*/
+}
+.head h1{
+    color: white;
+    background-color: #4d4d2d;
+    font-size: 50px;
+}
+.kim h1{
+    font-size: 30px;
+}
+.wel{
+    
+    color: white;
+    /* max-width: 2160px; */
+    width: 100%;
+}
+.wel marquee{
+    color: white;
+    background-color: #4d4d2d;
+    margin-top: 90px;
+    max-width: 2160px;
+    width: 100%;
+
+
+}
+.icon2{
+    font-size: 25px;
+}
+.icon3{
+    font-size: 25px;
+}
+
+.contact {
+    font-size: 25px;
+}
+.contact1{
+    color: white;
+}
+
+@media screen and (max-width:1067px) {
+   .stat1{
+    width:100%;
+   }
+}
+.book{
+    color: white;
+}
+#lo a{
+    color: white;
+}
+#log a {
+    color: white;
+}
+#logi a{
+    color: white;
+}
+#lot a{
+     color: white;
+}
+#us a{
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .navbar {
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .third,
+    .con,
+    .cont4,
+    .cont5,
+    .cont6 {
+        flex-direction: column;
+    }
+
+    .stat1,
+    .stat2,
+    .stat3,
+    .stat6,
+    .green,
+    .gin {
+        width: 100%;
+    }
+
+    .bx1,
+    .get,
+    .form-container {
+        width: 100%;
+    }
+
+    .data {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ---------- Mobile: 768px & below ---------- */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .para,
+    .serv,
+    .deep,
+    .mask,
+    .hydra {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 80%;
+        margin: auto;
+    }
+
+    .swa button {
+        width: 200px;
+        height: 70px;
+    }
+
+    /* FORM */
+    .form-container {
+        padding: 10px;
+    }
+
+    .footer {
+        gap: 40px;
+    }
+}
+
+/* ---------- Small Mobile: 480px & below ---------- */
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .bx1 h2,
+    .serv h2,
+    .deep h2,
+    .mask h2,
+    .hydra h2 {
+        font-size: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+.wel marquee{
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.font marquee{
+    height: 70px;
+    padding-top: 15px;
+    font-size: 25px;
+    /* margin-bottom: 30px; */
+    /* margin-top: 5px; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4d4d2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background: #4d4d2d;
+}
+
+/* -------- RESPONSIVE -------- */
+
+@media(max-width: 600px){
+    .card{
+        width: 100%;      /* Full width on phone */
+        max-width: 350px;
+    }
+
+    .card-container{
+        gap: 20px;
+    }
+}
+.vice{
+    padding-left: 350px;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 350px;
+}
